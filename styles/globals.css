@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@layer base {
+  body {
+    font-family: 'Grandstander', cursive;
+  }
+}
+@tailwind utilities;
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .svgWidth {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .svgWidth {
+    width: 230px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .svgWidth {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .svgWidth {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .svgWidth {
+    width: 300px;
+  }
+}
+
+/*animation*/
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
+}
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
